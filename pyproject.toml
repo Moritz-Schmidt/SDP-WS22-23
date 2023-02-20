@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "sdp2022"
+version = "0.1.0"
+description = ""
+authors = ["Moritz Schmidt", "Amelie Dickmann", "Hanna Brugger", "Luca Fanderey"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+python-ev3dev2 = "^2.1.0"
+paho-mqtt = "^1.6.1"
+pandas = "^1.5.2"
+matplotlib = "^3.6.2"
+
+[tool.poetry.dev-dependencies]
+pydocstyle = "^6.1.1"
+pycodestyle = "^2.9.1"
+flake8 = "^5.0.4"
+black = {version = "^22.10.0", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

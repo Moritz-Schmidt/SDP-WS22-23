@@ -1,0 +1,18 @@
+[package]
+name = "sdp2023"
+version = "0.1.0"
+edition = "2021"
+authors = ["Moritz Schmidt", "Hanna Brugger", "Luca Fandrey", "Amelie Dickmann"]
+publish = false
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = { version = "4.1.1", features = ["derive"] }
+ctrlc = "3.2.4"
+rumqttc = { version = "0.20", features = ["websocket"] }
+ev3dev-lang-rust = "0.12.1"
+serde_derive = "1.0.152"
+config = "0.13.3"
+serde = "1.0.152"

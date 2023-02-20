@@ -1,0 +1,49 @@
+steering:
+  speed: 100
+  max_steering: 60
+  turn_timeout: 200
+  stop_action: BRAKE
+sensors:
+  left_threshold: 400
+  right_threshold: 400
+  middle_threshold: 30
+act:
+  turn:
+    steering: 100
+    speed: 100
+    rotations: 1.1
+  wait_for_ball:
+    drive_until_dist: 8.0
+    finish_dist: 30.0
+  push_block:
+    drive_until_dist: 4.0
+    leave_line:
+      on_for_rotations:
+        steering: 100
+        speed: 100
+        rotations: 0.6
+      drive:
+        steering: 50
+        speed: 50
+    u_turn:
+      on_for_rotations:
+        steering: 100
+        speed: 100
+        rotations: 1.1
+      drive:
+        steering: 100
+        speed: 100
+    return_to_line:
+      steering: 40
+      speed: 50
+      seconds: 1
+  throw_ball:
+    drive_until_dist: 5.0
+    speed: 100
+    ball_motor_speed: 700
+    ball_motor_rel_pos: 90
+cond:
+  lines:
+    time: 1000
+    count: 5
+  dist: 15.0
